@@ -1,0 +1,19 @@
+.serviceOrderWrapper{
+
+}
+
+.cardsContainer{
+    display:grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax( 25vw,1fr));
+    gap:30px;
+}
+
+.customerCard{
+    /* background-color: red; */
+    border: 2px solid rgba(0, 0, 0, 0.149);
+    border-radius: 12px;
+    height: 38vh;
+    /* max-width: 25vw;     */
+    /* width: 25vw; */
+}

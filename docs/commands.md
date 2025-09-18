@@ -34,11 +34,30 @@ git merge main             # merge main into current branch or merge current int
 
 Remotes & pushing
 ```bash
-# add remote (only once)
+# add remote (only once) 
+# cette commande ajoute une nouvelle remote avec un nom spécifié et une URL associée.
+# git remote add <nom_remote> <URL_remote>
 git remote add origin https://github.com/<user>/<repo>.git
+
+# cette commande affiche la liste de toutes les remotes configurées dans votre dépôt local.
+git remote
+
+
+# Renommer une remote :
+
+# cette commande permet de renommer une remote existante. 
+# Par exemple, git remote rename origin new-origin renomme la remote « origin » en « new-origin »
+‘git remote rename <ancien_nom> <nouveau_nom>’
 
 # check remotes
 git remote -v
+
+# Supprimer une remote :
+
+#cette commande supprime la remote spécifiée du dépôt local.
+#Par exemple, git remote remove origin supprime la remote « origin ».
+git remote remove <nom_remote>
+
 
 # push current branch and set upstream
 git push --set-upstream origin feature/x
@@ -51,7 +70,12 @@ git push --set-upstream origin main
 
 Cloning
 ```bash
-git clone https://github.com/<user>/<repo>.git
+
+git clone https://github.com/<user>/<repo>.git #cette commande permet de cloner (ou     brancher) un dépôt distant sur votre machine locale.
+
+git branch -M main #cette commande renomme la branche principale (par défaut « master » avant Git 2.28) en « main ». L'option -M est utilisée pour forcer le renommage de la branche, même si une branche du même nom existe déjà
+
+git push -u origin main
 # or with SSH
 git clone git@github.com:<user>/<repo>.git
 ```

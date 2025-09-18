@@ -13,7 +13,8 @@ git branch -M main
 # add remote (replace with your repo URL)
 git remote add origin https://github.com/<your-username>/github-commands-cheatsheet.git
 # push and set upstream
-git push --set-upstream origin main
+git push --set-upstream origin main or git push -u origin main
+    
 ```
 
 Notes

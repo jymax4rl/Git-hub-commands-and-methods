@@ -35,4 +35,13 @@ Auteur : l’auteur du commit est celui qui a fait le commit, son nom et son mai
 
 Date du commit : très utile pour savoir quand la modification a été faite (par exemple, nous retrouvons un bug depuis le 17/03, et nous nous rendons compte qu’il y a eu un commit ce jour-là. Le bug est donc sûrement dans la modification de ce commit.).
 
-Message du commit : chaque commit est accompagné d’un message qui décrit les modifications effectuées. Le message du commit doit être informatif et décrire clairement les changements apportés.
+Message du commit : chaque commit est accompagné d’un message qui décrit les modifications effectuées. Le message du commit doit être informatif et décrire clairement les changements apportés.    
+
+
+## Afficher l’historique et le détail de toutes les modifications
+
+Si vous êtes à la recherche d’un bug, vous pourriez vouloir voir quelles sont les modifications qui ont été faites pour chaque commit. Pour cela, vous pouvez utiliser l’option -p ou --patch
+
+
+```bash
+git log -p

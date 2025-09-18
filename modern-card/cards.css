@@ -5,13 +5,13 @@
 .cardsContainer{
     display:grid;
     align-items: start;
-    grid-template-columns: repeat(auto-fit, minmax( 25vw,1fr));
-    gap:30px;
+    grid-template-columns: repeat(auto-fit, minmax( 20vw,1fr));
+    gap:10px;
 }
 
 .customerCard{
     /* background-color: red; */
-    border: 2px solid rgba(0, 0, 0, 0.149);
+    border: 1px solid rgba(0, 0, 0, 0.149);
     border-radius: 12px;
     height: 38vh;
     /* max-width: 25vw;     */

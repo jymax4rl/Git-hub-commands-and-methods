@@ -4,7 +4,7 @@ Généralement, vous vous occupez de créer votre **remote** lorsque vous commen
 
 ### The remote is the reference (a shortcut name, like origin) that points to the URL of a repository
 
-![alt text](image-2.png)
+![alt text](image-.1png)
 
 
 Vous pouvez aussi avoir plusieurs remotes.  

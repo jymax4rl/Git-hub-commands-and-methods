@@ -1,3 +1,6 @@
+[Video explanation](https://youtu.be/GOrhB6eYASU?si=ltM7ovfm8e6aSAq_)
+
+
 <!-- git fetch récupère les modifications du dépôt distant spécifié par la remote nommée « origin ». Cependant, vous pouvez remplacer « origin » par le nom de n'importe quelle remote que vous avez configurée dans votre dépôt local. -->
 ```bash
 git fetch origin

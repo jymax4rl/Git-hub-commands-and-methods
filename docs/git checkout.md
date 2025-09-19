@@ -23,5 +23,4 @@ git checkout <commit> -- <chemin vers le fichier>
 
 #permet de restaurer un fichier à une version précédente spécifique.
 ```
-
 Lorsque vous utilisez git checkout pour restaurer un fichier, assurez-vous d’avoir sauvegardé les modifications non enregistrées, car cela écrasera les modifications actuelles avec la version précédente. Soyez prudent lors de l’utilisation de cette commande pour éviter toute perte de données.

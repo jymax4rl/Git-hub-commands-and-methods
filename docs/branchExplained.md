@@ -51,9 +51,9 @@ A -- B -- C   (main)
 
 ## Useful Commands
 ### check which branch you’re currently working on
-```bash
-git branch
-```
+   ```bash
+   git branch
+   ```
 
 ### Create a new branch
 ```bash

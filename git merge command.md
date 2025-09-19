@@ -1,15 +1,45 @@
-Pour réaliser cette opération, vous pouvez utiliser la commande git merge en fournissant le nom de la branche à fusionner.
+# Utilisation de `git merge`
 
-Tout d'abord, vous devez vous assurer d'être sur la branche « master ». Pour ce faire, vous exécutez la commande git checkout master. Ensuite, pour fusionner la branche « dev » dans la branche « master », vous exécutez la commande git merge dev
+## Fusionner une branche dans une autre
 
-$ git checkout master
+La commande `git merge` permet de fusionner une branche dans la branche courante.
+
+---
+
+## Exemple : Fusion de la branche `dev` dans `master`
+
+1. Assurez-vous d'abord d'être sur la branche `master` :
+
+```bash
+git checkout master
+```
+
+Résultat attendu :
+
+```
 Switched to branch 'master'
-$ git merge dev
+```
+
+2. Fusionnez ensuite la branche `dev` dans `master` :
+
+```bash
+git merge dev
+```
+
+Résultat :
+
+```
 Updating abcd123..efgh456
 Fast-forward
  src/index.html  |  3 ++-
- src/style.css  |  5 ++++-
+ src/style.css   |  5 ++++-
  2 files changed, 6 insertions(+), 2 deletions(-)
+```
 
+---
 
- La commande Git merge détecte automatiquement les modifications de la branche « dev » et crée un nouveau commit qui intègre ces modifications à la branche « master ». Dans cet exemple, Git a effectué une fusion rapide (Fast-forward) car il n'y avait pas de conflits à résoudre entre les 2 branches.
+## Explication
+
+- La commande `git merge dev` détecte automatiquement les modifications apportées sur la branche `dev` et les intègre dans la branche `master`.
+- Dans l’exemple ci-dessus, Git a effectué une **fusion rapide (Fast-forward)** car il n’y avait pas de conflits à résoudre entre les deux branches.
+- Si des conflits existent, Git vous demandera de les résoudre manuellement avant de finaliser la fusion avec un commit.
